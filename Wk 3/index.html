@@ -4,33 +4,73 @@
 <style>
 h1 {
     background-color: #f3216e;
-    color:azure;
+    color: azure;
     text-align: center;
+    width: 500px;
+    margin: auto;
 }
 
-    .grid-container {
-  display: grid;
-  grid-template-columns: auto auto;
-  background-color: #f3216e;
-  padding: 10px;
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: #f3216e;
+    padding: 10px;
 }
 
 .grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
-  font-size: 30px;
-  text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
 }
+
+.circular-photo {
+    position: relative;
+    width: 150px; /* Adjust the size of the circle */
+    height: 150px;
+    border-radius: 50%; /* Make it a circle by setting border-radius to 50% */
+    overflow: hidden; /* Ensure the image stays within the rounded boundaries */
+    margin: auto; /* Center the image horizontally */
+}
+
+/* Add styles to make the image responsive */
+.circular-photo img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.chat-bubble {
+    position: absolute;
+    background-color: #87CEEB; /* Light blue color for the chat bubble */
+    padding: 10px;
+    border-radius: 10px;
+    bottom: 150%; /* Position the bubble above the image */
+    left: 50%; /* Center the bubble horizontally */
+    transform: translateX(-50%); /* Adjust to center the bubble perfectly */
+}
+
 </style>
 <title>Lab 2: Week 3</title>
 </head>
 <body>
 
-<h1>Week 3 Exercise</h1>
-<h2>CSS Exercise</h2>
+<div>
+    <h1>Week 3 Exercise</h1>
+</div>
+<div class="circular-photo">
+    <img src="kitte.png" alt="Cute Cat" style="width:150px;height:200px;">
+    <div class="chat-bubble">
+        <p style="margin: 0;">CSS Exercise</p>
+        <p style="margin: 0;">For today's notes, I will be referencing the following site: <a href="https://www.w3schools.com">W3 Schools</a></p>
+    </div>
+</div>
+<div>
+    <h2>CSS Exercise</h2>
+    <p>For today's notes, I will be referencing the following site: <a href="https://www.w3schools.com">W3 Schools</a></p>
+</div>
 
-<p>For today's notes, I will be referencing the following site: <a href="https://www.w3schools.com">W3 Schools</a></p>
 <hr>
 
 <div class="grid-container">
@@ -46,10 +86,7 @@ h1 {
 </div>
 
 <hr>
-
-<img src="kitte.png" alt="Cute Cat" style="width:150px;height:200px;">
-<p style="color:deepskyblue">This is paragraph with a different color using the style attrribute.</p>
-
+<p style="color: deepskyblue">This is a paragraph with a different color using the style attribute.</p>
 
 </body>
 </html>
