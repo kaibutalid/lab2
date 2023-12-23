@@ -1,92 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<style>
-h1 {
-    background-color: #f3216e;
-    color: azure;
-    text-align: center;
-    width: 500px;
-    margin: auto;
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: auto auto;
-    background-color: #f3216e;
-    padding: 10px;
-}
-
-.grid-item {
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
-}
-
-.circular-photo {
-    position: relative;
-    width: 150px; /* Adjust the size of the circle */
-    height: 150px;
-    border-radius: 50%; /* Make it a circle by setting border-radius to 50% */
-    overflow: hidden; /* Ensure the image stays within the rounded boundaries */
-    margin: auto; /* Center the image horizontally */
-}
-
-/* Add styles to make the image responsive */
-.circular-photo img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.chat-bubble {
-    position: absolute;
-    background-color: #87CEEB; /* Light blue color for the chat bubble */
-    padding: 10px;
-    border-radius: 10px;
-    bottom: 150%; /* Position the bubble above the image */
-    left: 50%; /* Center the bubble horizontally */
-    transform: translateX(-50%); /* Adjust to center the bubble perfectly */
-}
-
-</style>
-<title>Lab 2: Week 3</title>
+<link rel="stylesheet" href="mystyle.css">
+<title>Personal Profile</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 
-<div>
-    <h1>Week 3 Exercise</h1>
-</div>
-<div class="circular-photo">
-    <img src="kitte.png" alt="Cute Cat" style="width:150px;height:200px;">
-    <div class="chat-bubble">
-        <p style="margin: 0;">CSS Exercise</p>
-        <p style="margin: 0;">For today's notes, I will be referencing the following site: <a href="https://www.w3schools.com">W3 Schools</a></p>
-    </div>
-</div>
-<div>
-    <h2>CSS Exercise</h2>
-    <p>For today's notes, I will be referencing the following site: <a href="https://www.w3schools.com">W3 Schools</a></p>
-</div>
-
-<hr>
-
 <div class="grid-container">
-    <div class="grid-item">
-        <h3>This is a heading.</h3>
-        <p>This is a paragraph.</p>
+    <div class="header">
+        <img src="kitte.png" alt="Circle Image" class="circle-image">
+        <h1>Kai's Space</h1>
     </div>
-    
-    <div class="grid-item">
-        <h3>This is a heading.</h3>
-        <p>This is a paragraph.</p>
-    </div>
-</div>
 
-<hr>
-<p style="color: deepskyblue">This is a paragraph with a different color using the style attribute.</p>
+    <div class="left">
+        <div class="sidenav">
+            <a href="#">Home</a>
+            <a href="#">Album</a>
+            <a href="#">Recs</a>
+        </div>
+    </div>
+
+    <div class="content">
+        <h2>This Took Forever</h2>
+        <p>ToT Making layouts is going to kill me.</p>
+    </div>
+      
+</div>
+        
 
 </body>
 </html>
