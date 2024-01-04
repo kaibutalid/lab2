@@ -10,6 +10,7 @@ body {
 .header {
     grid-area: header;
     display: flex;
+    justify-content: space-between;
     background-color: #cdb4db;
     color: #ffffff;
     padding: 20px;
@@ -17,6 +18,33 @@ body {
     width: 100%;
     z-index: 2;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    margin-left: 25px;
+}
+
+.head-links {
+    display: flex;
+    padding-top: 20px;
+    list-style: none;
+}
+
+.head-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Add a smooth color transition on hover */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.head-links a:hover {
+    color: #69418c; /* Change the color on hover */
+}
+
+.head-links a.active {
+    color: #69418c;
+    font-weight: bold;
 }
 
 .grid-container {
@@ -33,22 +61,11 @@ body {
     width: 200px;
     position: fixed;
     z-index: 1;
-    top: 110px;
+    top: 0;
     left: 0;
     background-color: #cdb4db;
     overflow-x: hidden;
-}
-  
-.sidenav a {
-    color: white;
-    padding: 16px;
-    text-decoration: none;
-    display: block;
-}
-  
-.sidenav a:hover {
-    background-color: #bdb2ff;
-    color: #69418c;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
   
 .content {
@@ -70,5 +87,20 @@ body {
     height: 70px; 
     margin-right: 20px; 
     margin-left: 20px;
+}
+
+audio {
+    width: 100vw;
+    max-width: 400px;
+    margin: 14px 10px;
+    border-radius: 10px;
+}
+
+audio::-webkit-media-controls-panel {
+    background-color: #fdeaff;
+  }
+
+audio::-webkit-media-controls-timeline {
+    color:#69418c;
 }
   
