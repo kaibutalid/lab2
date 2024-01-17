@@ -26,6 +26,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 var prevScrollpos = window.pageYOffset;
 
+// audio 
 
         window.onscroll = function() {
             var currentScrollPos = window.pageYOffset;
