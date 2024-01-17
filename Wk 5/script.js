@@ -24,7 +24,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-
+// fixed header
 var prevScrollpos = window.pageYOffset;
  
 
@@ -40,7 +40,7 @@ var prevScrollpos = window.pageYOffset;
             prevScrollpos = currentScrollPos;
         }
 
-
+// audio
         const playerButton = document.querySelector('.player-button'),
         audio = document.querySelector('audio'),
         timeline = document.querySelector('.timeline'),
