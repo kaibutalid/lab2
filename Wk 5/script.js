@@ -24,6 +24,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+// fixed header
 var prevScrollpos = window.pageYOffset;
  
 
