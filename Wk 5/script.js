@@ -25,8 +25,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 var prevScrollpos = window.pageYOffset;
-
-// audio 
+ 
 
         window.onscroll = function() {
             var currentScrollPos = window.pageYOffset;
@@ -40,6 +39,7 @@ var prevScrollpos = window.pageYOffset;
             prevScrollpos = currentScrollPos;
         }
 
+// audio
         const playerButton = document.querySelector('.player-button'),
         audio = document.querySelector('audio'),
         timeline = document.querySelector('.timeline'),
