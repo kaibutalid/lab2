@@ -13,6 +13,7 @@ function setActiveLink() {
 
 window.onload = setActiveLink;
 
+// navigation scrolling
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
