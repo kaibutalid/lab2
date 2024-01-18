@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap');
 
 body, html {
     height: 100%;
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Montserrat", "Open Sans", sans-serif;
   }
 
 .header {
@@ -29,6 +30,31 @@ body, html {
     margin-right: 30px;
 }
 
+.ftr-links {
+  list-style: none;
+  margin: 10px 0;
+}
+
+.ftr-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease; 
+}
+
+.ftr-links a:hover {
+  color: #69418c; /* Change the color on hover */
+}
+
+.ftr-links a.active {
+  color: #69418c;
+  font-weight: bold;
+}
+
+.ftr-links li {
+  margin: 6px 0 20px 60px;
+  display: block;
+}
+
 .head-links a {
     color: #fff;
     text-decoration: none;
@@ -45,17 +71,25 @@ body, html {
     font-weight: bold;
 }
 
-.circle-image {
+.circle-image1 {
     border-radius: 50%;
     width: 70px;
     height: 70px; 
     margin-left: 30px;
 }
 
+.circle-image {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px; 
+  margin-left: 30px;
+}
+
 .circle-image2 {
     border-radius: 50%;
     width: 250px;
-    height: 250px;  
+    height: 250px;
+    object-fit: cover; 
     margin-right: 100px;
 }
 
@@ -78,7 +112,7 @@ section {
 }
 
 #section2 {
-    padding: 10px;
+    padding: 2px;
 }
 
 .caption {
@@ -86,7 +120,9 @@ section {
     left: 50%;
     bottom: 10%;
     transform: translate(-50%, -50%);
-    border-bottom: 5px solid #fff; /* Add a white border */
+    border-bottom: 5px solid #fff;
+    color: white;
+    font-style: italic;
 }
 
 .txtbox-1{
@@ -97,19 +133,37 @@ section {
 
 .txtbox-2{
     text-align: justify;
-    margin: 0 auto; /* Center the element horizontally */
-    max-width: 600px; /* Set a maximum width if desired */
+    margin: 0 auto; 
+    max-width: 600px; 
+    padding-top: 12px;
 }
 
 .txtbox-3{
     text-align: justify;
-    margin: 0 auto; /* Center the element horizontally */
-    max-width: 600px; /* Set a maximum width if desired */
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.txtbox-ftr {
+    text-align: justify;
+    margin: 0 auto; 
+    max-width: 500px;
+}
+
+.txtbox-ftr > div {
+  display: flex;
+  flex-wrap: wrap; 
+  text-align: left;
+}
+
+.ftr {
+  padding-top: 40px;
+  
 }
 
 .txtbox-1 > div {
     display: flex;
-    flex-wrap: wrap; /* Allow the content to wrap on smaller screens */
+    flex-wrap: wrap;
     align-items: center;
     text-align: left;
 }
@@ -120,6 +174,7 @@ section {
     margin-bottom: 3px;
 }
 
+
 .h-deets2 {
     color: #cdb4db;
     margin: 0;
@@ -129,11 +184,15 @@ section {
     margin:0;
 }
 
+.fdeets-container {
+  margin-left: 0;
+}
+
 .v-line {
     position: absolute;
     height: 12%;
-    width: 5px; /* Adjust the width of the line as needed */
-    background-color: white; /* Adjust the color of the line as needed */
+    width: 5px;
+    background-color: white;
     left: 50%;
     bottom: 0;
     transform: translateX(-50%);
@@ -148,6 +207,11 @@ section {
     left: 50%;
     bottom: -8%;
     transform: translateX(-50%);
+}
+
+footer {
+  height: 40%;
+  background-color: #926a93;
 }
 
 audio {
@@ -186,7 +250,6 @@ audio {
     .icon-container {
       width: 100%;
       height: 100%;
-      background-color: #DE5E97;
       color: #fff;
       display: flex;
       justify-content: center;
