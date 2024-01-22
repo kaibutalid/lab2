@@ -40,6 +40,28 @@ var prevScrollpos = window.pageYOffset;
             prevScrollpos = currentScrollPos;
         }
 
+function play_sound(clicked_id) {
+  var audio = new Audio(clicked_id + "twinkle.mp3");
+  audio.play();
+}
+
+function change(clicked_id) {
+  document.getElementById("shop").src = clicked_id;
+}
+
+var originalImage = "3.png";
+var alternateImage = "sparkle.png";
+var isOriginal = true;
+
+function toggle() {
+    if (isOriginal) {
+        change(alternateImage);
+    } else {
+        change(originalImage);
+    }
+    isOriginal = !isOriginal;
+}
+
 // audio
         const playerButton = document.querySelector('.player-button'),
         audio = document.querySelector('audio'),
@@ -74,7 +96,7 @@ var prevScrollpos = window.pageYOffset;
     }
   }
   
-  playerButton.addEventListener('click', toggleAudio);
+  playerButton.addEventListener('click', toggleAudio); //function parameters
   
   function changeTimelinePosition () {
     const percentagePosition = (100*audio.currentTime) / audio.duration;

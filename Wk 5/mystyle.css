@@ -209,6 +209,13 @@ section {
     transform: translateX(-50%);
 }
 
+button {
+  cursor: pointer;
+  border:none;
+  background-color: transparent;
+  padding: 0;
+}
+
 footer {
   height: 40%;
   background-color: #926a93;
