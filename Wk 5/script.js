@@ -40,6 +40,11 @@ var prevScrollpos = window.pageYOffset;
             prevScrollpos = currentScrollPos;
         }
 
+// BOM 
+function msg() {
+  alert("Be careful! Ongoing Website Construction!");
+}
+
 // soundboard
 function play_sound(clicked_id) {
   var audio = new Audio(clicked_id + "twinkle.mp3");
