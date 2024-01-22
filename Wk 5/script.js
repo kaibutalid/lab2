@@ -46,6 +46,7 @@ function play_sound(clicked_id) {
   audio.play();
 }
 
+// change img
 function change(clicked_id) {
   document.getElementById("shop").src = clicked_id;
 }
