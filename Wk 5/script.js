@@ -48,7 +48,7 @@ function play_sound(clicked_id) {
 
 // change img
 function change(clicked_id) {
-  document.getElementById("shop").src = clicked_id;
+  document.getElementById("shop").src = clicked_id; // Onclick event
 }
 
 var originalImage = "3.png";
