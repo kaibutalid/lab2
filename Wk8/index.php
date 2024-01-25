@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="mystyle.css" > 
     <script defer src="script.js"></script>
-    <title>Kai's Space</title>
+    <title><?php echo "Kai's Space"; ?></title>
    
 </head>
 <body>
