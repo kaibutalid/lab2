@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="mystyle.css" > 
     <script defer src="script.js"></script>
+    <?php
+    // Define a variable to determine the page title
+    $pageTitle = "Kai's Space";
+
+    // Example condition: Change the title if a specific condition is met
+    if (isset($_GET['section']) && $_GET['section'] === 'about') {
+        $pageTitle = "About Kai";
+    }
+    ?>
     <title><?php echo "Kai's Space"; ?></title>
    
 </head>
