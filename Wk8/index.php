@@ -16,7 +16,13 @@
     $email = "kabutalid@student.apc.edu.ph";
     $zodiacSign = "Leo";
 
-    
+    // Function to display details
+    function displayDetails($label, $value) {
+        echo "<div>
+                <p class='h-deets1'>$label</p>
+                <p class='h-deets2'>$value</p>
+            </div>";
+    }
     ?>
 
     <header>
