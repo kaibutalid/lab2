@@ -10,6 +10,15 @@
 </head>
 <body>
 
+<?php
+    // Variables
+    $name = "Kai";
+    $email = "kabutalid@student.apc.edu.ph";
+    $zodiacSign = "Leo";
+
+    
+    ?>
+
     <header>
         <div class="header" id="site-header">
             <img src="planet.png" alt="Planet" class="circle-image1">
