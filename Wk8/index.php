@@ -74,18 +74,12 @@
                 <div>  
                     <img src="kai.jpg" alt="Circle Image" class="circle-image2">
                     <div class="deets-container">
-                        <div>
-                            <p class="h-deets1">Name</p>
-                            <p class="h-deets2">Kai</p>
-                        </div>
-                        <div>
-                            <p class="h-deets1">Email</p>
-                            <p class="h-deets2">kabutalid@student.apc.edu.ph</p>
-                        </div>
-                        <div>
-                            <p class="h-deets1">Zodiac Sign</p>
-                            <p class="h-deets2">Leo</p>
-                        </div>
+                    <?php
+                        // Display details using the function
+                        displayDetails("Name", $name);
+                        displayDetails("Email", $email);
+                        displayDetails("Zodiac Sign", $zodiacSign);
+                        ?>
                     </div>
                 </div>
             </div>
