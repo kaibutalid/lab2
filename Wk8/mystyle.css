@@ -115,6 +115,10 @@ section {
     padding: 2px;
 }
 
+#section-form {
+  padding: 10px;
+}
+
 .caption {
     position: absolute;
     left: 50%;

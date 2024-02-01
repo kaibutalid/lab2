@@ -42,6 +42,7 @@
                     <li><a href="#section1">Home</a></li>
                     <li><a href="#section2">About</a></li>
                     <li><a href="#section3">Contact</a></li>
+                    <li><a href="form.php">Form</a></li>
                 </ul>
             </nav>
         </div>
