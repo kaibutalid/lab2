@@ -15,9 +15,9 @@
             <img src="planet.png" alt="Planet" class="circle-image1">
             <nav>
                 <ul class="head-links">
-                    <li><a href="#section1">Home</a></li>
-                    <li><a href="#section2">About</a></li>
-                    <li><a href="#section3">Contact</a></li>
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="index.php">About</a></li>
+                    <li><a href="index.php">Contact</a></li>
                     <li><a href="form.php">Form</a></li>
                 </ul>
             </nav>
@@ -71,23 +71,21 @@ function test_input($data) {
 }
 ?>
 
-<h2>Add a Comment!</h2>
+<h2>Any Questions? Ask here:</h2>
 <p style = "font-size: 12px; color: gray;"><span class="error">* = required field</span></p>
 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
-  Username: <input type="text" name="name">
+  Name: <input type="text" name="name">
   <span class="error">* <?php echo $nameErr;?></span>
   <br><br>
-  Comment: <textarea name="comment" rows="5" cols="40"></textarea>
+  Email: <input type="email" name="name">
+  <span class="error">* <?php echo $nameErr;?></span>
+  <br><br>
+  Question: <textarea name="comment" rows="5" cols="40"></textarea>
   <br><br>
   <input type="submit" name="submit" value="Submit">  
 </form>
 
-<?php
-echo "<h2>Comment:</h2>";
-echo $name;
-echo "<br>";
-echo $comment;
-?>
+
 </div>
     </section>
 
