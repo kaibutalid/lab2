@@ -57,9 +57,9 @@ echo $gender;
 
 <?php
 $servername = "localhost";
-$username = "root";
-$password = "knjpjmjhs";
-$dbname = "myDB";
+$username = "webprogss221";
+$password = "=latHen97";
+$dbname = "webprogss221";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -68,8 +68,8 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "INSERT INTO MyGuests (firstname, lastname, email)
-VALUES ('$name', '$website', '$email')";
+$sql = "INSERT INTO kabutalid_myguests (name, email, website, comment, gender, reg_date)
+VALUES ('$name', '$email', '$website', '$comment', '$gender')";
 
 if ($conn->query($sql) === TRUE) {
   echo "New record created successfully";
